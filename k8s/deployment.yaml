@@ -17,3 +17,6 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+        containers:
+      - name: nginx
+        image: nagarajanroshen/argo-nginx-demo:latest
