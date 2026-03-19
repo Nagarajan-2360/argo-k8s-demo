@@ -20,3 +20,8 @@ spec:
         containers:
       - name: nginx
         image: nagarajanroshen/argo-nginx-demo:latest
+        - name: Build Image
+     run: docker build -t nagarajanp/argo-nginx-demo:latest ./app
+
+  - name: Push Image
+     run: docker push nagarajanp/argo-nginx-demo:latest
